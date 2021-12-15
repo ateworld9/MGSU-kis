@@ -1,0 +1,36 @@
+{
+  "name": "mgsu-kis",
+  "version": "1.0.0",
+  "description": "Задание по КИС",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ateworld9/MGSU-kis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ateworld9/MGSU-kis/issues"
+  },
+  "homepage": "https://github.com/ateworld9/MGSU-kis#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "sequelize": "^6.11.0",
+    "sequelize-auto": "^0.8.8",
+    "tedious": "^14.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.3.0"
+  }
+}
