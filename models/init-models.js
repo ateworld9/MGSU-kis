@@ -7,7 +7,7 @@ export default function initModels(sequelize) {
   const Orders = _Orders.init(sequelize, DataTypes);
   const Vagons = _Vagons.init(sequelize, DataTypes);
 
-  Orders.belongsTo(Vagons, { as: 'vagon', foreignKey: 'vagon_id' });
+  Orders.belongsTo(Vagons, { as: 'Vagons', foreignKey: 'vagon_id' });
   Vagons.hasMany(Orders, { as: 'Orders', foreignKey: 'vagon_id' });
 
   return {

@@ -4,7 +4,7 @@ import initModels from './models/init-models.js';
 const sqlDB = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
   host: process.env.DB_HOST || 'localhost',
   dialect: 'mssql',
-  port: Number(process.env.DB_PORT) || 5432,
+  port: Number(process.env.DB_PORT) || 1433,
 });
 
 (async () => {
@@ -16,5 +16,4 @@ const sqlDB = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.en
   }
 })();
 
-const models = initModels(sqlDB);
-console.log(models);
+initModels(sqlDB);
